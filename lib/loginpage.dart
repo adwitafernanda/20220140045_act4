@@ -1,3 +1,5 @@
+import 'package:act4/homepage.dart';
+import 'package:act4/registerpage.dart';
 import 'package:flutter/material.dart';
 
 class LoginPage extends StatefulWidget {
