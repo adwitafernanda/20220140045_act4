@@ -15,10 +15,8 @@ class _LoginPageState extends State<LoginPage> {
   void initState() {
     super.initState();
   }
-} 
-
-@override
-  Widget build(BuildContext context) {
+  @override
+Widget build(BuildContext context) {
     final _formKey = GlobalKey<FormState>();
     return Scaffold(
       body: Form(
@@ -60,10 +58,20 @@ class _LoginPageState extends State<LoginPage> {
                 },
                 child: const Text('Login'),
               ),
+              TextButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => RegisterPage()),
+                  );
+                },
+                child: const Text('Belum punya akun? Daftar'),
+              ),
             ],
           ),
         ),
       ),
     );
   }
-}
+} 
+
